@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.main{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.40)rgba(0,0,0,0.40)); 
+    background-size: center;
+    background-position: center;
+}
+.Top{
+    width: 100%;
+    height: 120px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url("backtop.png");
+    background-position: center;
+    background-size: center;
+}
+.list{
+    display: flex;
+    width: 36.5%;
+    height: 40px;
+    background: transparent;
+}
+.list li{
+    list-style: none; 
+    display: inline-block;
+    margin: 12px;
+}
+.list li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    padding: 12px;
+    border-radius: 10px;
+}
+li a:hover{
+    background-color: white;
+    transition: 0.5s;
+    color: black;
+}
+.logo{
+    width: 200px;
+    margin-left: 25%;
+    margin-top: -10px;
+    cursor: pointer;
+}
+.middle{
+    position: relative;
+    width: 100%;
+    height: 82.5vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    background: transparent;
+}
+.middle img{
+    width: 100%;
+    background-size: cover;
+    opacity: 50%;
+}
+#h2-div{
+    position: absolute;
+    width: 120px;
+    height: 30px;
+    margin-top: 6%;
+    margin-right: 31%;
+    opacity: 100%;
+    text-transform: uppercase;
+    color: white;
+    background: transparent;
+}
+#h2-div h2{
+    font-size: 30px;
+}
+.form-div{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 40%;
+    height: 55%;
+    margin-top: 12%;
+    background-image: url("backblack.png");
+    background-position: center;
+    background-size: center;
+    border-radius: 5px;
+}
+.form-div form{
+    
+    list-style: none;
+    padding: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#div1{
+    width: 80%;
+    height: 20%;
+}
+#div1 label{
+    color: rgb(46, 106, 235);
+}
+#div1 input{
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    background-color: rgb(50, 56, 56);
+    color: white;
+
+}
+#div2{
+    width: 80%;
+    height: 20%;
+    margin-top: 30px;
+}
+#div2 label{
+    color: white;
+    opacity: 70%;
+}
+#div2 input{
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    background-color: rgb(50, 56, 56);
+    color: white;
+
+}
+#div3{
+    width: 70%;
+    height: 20%;
+    margin-top: 20px;
+}
+#div3 input{
+    width: 20px;
+    height: 15px;
+    cursor: pointer;
+}
+button{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: transparent;
+    cursor: pointer;
+    color: black;
+    margin-top: 30px;
+    margin-left: 6%;
+    border-radius: 60px;
+    opacity: 75%;
+    border: transparent;
+    background-color: azure;
+}
+button:hover{
+    background-color: rgb(0, 186, 203);
+    opacity: 80%;
+    transition: 0.5s;
+    color: white;
+}
+.main video{
+    position: absolute;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+@media(min-aspect-ratio: 16/9){
+    .main video{
+        width: 100%;
+        height:auto;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .list li a{
+        float: none;
+        width: 50%;
+    }
+    
+}

@@ -1,0 +1,283 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+html,
+
+    body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+    }
+/* Main Container CSS */
+.main-container{
+    width: 100%;
+    height: auto;
+}
+/* Top Banner CSS */
+.top-banner{
+    width: 100%;
+    height: 120px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url("backtop.png");
+    background-position: center;
+    background-size: cover;
+}
+#logo{
+    width: 200px;
+    margin-left: 30%;
+    margin-top: -10px;
+}
+.navbar{
+    width: 40%;
+    height: 30px;
+    padding: 20px;
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.list{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.list-items{
+    list-style: none;
+    display: inline-block;
+    margin: 12px;
+}
+.list-items a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    padding: 12px;
+    border-radius: 10px;
+}
+.list-items a:hover{
+    background-color: white;
+    transition: 0.5s;
+    color: black;
+}
+/* Middle Container CSS */
+.middle-banner{
+    position: absolute;
+    width: 100%;
+    height: 400vh;
+    min-height: 100vh;
+    background-image: url("back.png");
+    background-size: cover;
+    background-position: center;
+}
+#nav{
+    width: 70%;
+    height: 5vh;
+    border-radius: 10px;
+    position: absolute;
+    margin-left: 25%;
+    margin-top: 3%;
+    text-transform: uppercase;
+    font-size: 11pt;
+    font-weight: 600;
+}
+#ul li a:hover{
+    background-color: white;
+    transition: 0.5s;
+    color: rgb(0, 183, 255);
+    border-radius: 10px;
+}
+
+/* Side Bar Menu CSS */
+.sidemenu{
+    width: 20%;
+    height: 100vh;
+
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30%;
+}
+.sidebar ul li{
+    list-style: none;
+    display: flex;
+    color: white;
+    float: left;
+    font-size: 15px;
+    flex-direction: column;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.sidebar ul li a{
+    text-decoration: none;
+    text-transform: bold;
+    color: rgb(3, 122, 161);
+    font-weight: 700;
+    font-size: 12px;
+    padding: 12px;
+    border-radius: 5px;
+}
+.sidebar ul li a:hover{
+    background-color: #ffffff;
+    transition: 0.5s;
+    color: black;
+    border-radius: 35px;
+}
+
+/* Slider CSS */
+.slider{
+    border-radius: 10px;
+    width: 70%;
+    height: 30vh;
+    margin-left: 25%;
+    margin-top: -50%;
+}
+
+/* Cards CSS */
+.cards{
+    height: 10%;
+    display: flex;
+    justify-content: space-evenly;;
+    margin-top: 30%;
+    margin-left: 20%;
+}
+.card{
+    width: 100%;
+    height: 100%;
+}
+.card-img-top{
+    width: 100%;
+    height: 90%;
+}
+.cards h3{
+    position: absolute;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 30px;
+    margin-top: -5%;
+    margin-right: 20%;
+    border: 2px dashed gray;
+    border-radius: 5px;
+    cursor: default;
+}
+.card-body{
+    background-color: gray;
+}
+.card-body a:hover{
+    background-color: #7cd222 !important;
+    transition: 0.5s;
+}
+/* Cards Css Top Sellers */
+.cards-2{
+    height: 12%;
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    margin-top: 15%;
+}
+.cards-2 .card{
+    width: 100%;
+    height: 100%;
+}
+.cards-2 .card-img-top{
+    width: 100%;
+    height: 90%;
+}
+.cards-2 h3{
+    position: absolute;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 30px;
+    margin-top: -8%;
+    border: 2px dashed gray;
+    border-radius: 5px;
+    cursor: default;
+}
+
+/* Card Slider */
+.swiper {
+    width: 80%;
+    height: 40vh;
+    margin-top: 20%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-slide .card-1{
+    background-size: cover;
+}
+.swiper-slide .card-1 img{
+    width: 100%;
+    height: 35vh;
+}
+.swiper-slide .card-1 a{
+    width: 100%;
+    height: 35px;
+    margin-top: 0.2%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.swiper-slide .card-1 a:hover{
+    background-color: #7cd222 !important;
+    transition: 0.5s;   
+}
+.card-slider h3{
+    position: absolute;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 30px;
+    margin-left: 40%;
+    margin-top: -8%;
+    border: 2px dashed gray;
+    border-radius: 5px;
+    cursor: default;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
